@@ -17,6 +17,13 @@
 		AC80F0A728C784680042E0C1 /* ScreenShareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80F0A628C784680042E0C1 /* ScreenShareDemoTests.m */; };
 		AC80F0B128C784680042E0C1 /* ScreenShareDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80F0B028C784680042E0C1 /* ScreenShareDemoUITests.m */; };
 		AC80F0B328C784680042E0C1 /* ScreenShareDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80F0B228C784680042E0C1 /* ScreenShareDemoUITestsLaunchTests.m */; };
+		ACABB84128C78684003A1739 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACABB84028C78684003A1739 /* ReplayKit.framework */; };
+		ACABB84528C78684003A1739 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB84428C78684003A1739 /* SampleHandler.m */; };
+		ACABB84C28C78684003A1739 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACABB84028C78684003A1739 /* ReplayKit.framework */; };
+		ACABB84E28C78684003A1739 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACABB84D28C78684003A1739 /* UIKit.framework */; };
+		ACABB85228C78684003A1739 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB85128C78684003A1739 /* BroadcastSetupViewController.m */; };
+		ACABB85628C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACABB84B28C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACABB85928C78684003A1739 /* BroadcastUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACABB83E28C78684003A1739 /* BroadcastUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +41,36 @@
 			remoteGlobalIDString = AC80F08628C784670042E0C1;
 			remoteInfo = ScreenShareDemo;
 		};
+		ACABB85428C78684003A1739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC80F07F28C784670042E0C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACABB84A28C78684003A1739;
+			remoteInfo = BroadcastUploadExtensionSetupUI;
+		};
+		ACABB85728C78684003A1739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC80F07F28C784670042E0C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACABB83D28C78684003A1739;
+			remoteInfo = BroadcastUploadExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACABB85A28C78684003A1739 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACABB85628C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex in Embed App Extensions */,
+				ACABB85928C78684003A1739 /* BroadcastUploadExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC80F08728C784670042E0C1 /* ScreenShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +90,16 @@
 		AC80F0AC28C784680042E0C1 /* ScreenShareDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenShareDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80F0B028C784680042E0C1 /* ScreenShareDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenShareDemoUITests.m; sourceTree = "<group>"; };
 		AC80F0B228C784680042E0C1 /* ScreenShareDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenShareDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		ACABB83E28C78684003A1739 /* BroadcastUploadExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUploadExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACABB84028C78684003A1739 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		ACABB84328C78684003A1739 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		ACABB84428C78684003A1739 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		ACABB84628C78684003A1739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACABB84B28C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastUploadExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACABB84D28C78684003A1739 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ACABB85028C78684003A1739 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
+		ACABB85128C78684003A1739 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
+		ACABB85328C78684003A1739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +124,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACABB83B28C78684003A1739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACABB84128C78684003A1739 /* ReplayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACABB84828C78684003A1739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACABB84C28C78684003A1739 /* ReplayKit.framework in Frameworks */,
+				ACABB84E28C78684003A1739 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +150,9 @@
 				AC80F08928C784670042E0C1 /* ScreenShareDemo */,
 				AC80F0A528C784680042E0C1 /* ScreenShareDemoTests */,
 				AC80F0AF28C784680042E0C1 /* ScreenShareDemoUITests */,
+				ACABB84228C78684003A1739 /* BroadcastUploadExtension */,
+				ACABB84F28C78684003A1739 /* BroadcastUploadExtensionSetupUI */,
+				ACABB83F28C78684003A1739 /* Frameworks */,
 				AC80F08828C784670042E0C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +163,8 @@
 				AC80F08728C784670042E0C1 /* ScreenShareDemo.app */,
 				AC80F0A228C784680042E0C1 /* ScreenShareDemoTests.xctest */,
 				AC80F0AC28C784680042E0C1 /* ScreenShareDemoUITests.xctest */,
+				ACABB83E28C78684003A1739 /* BroadcastUploadExtension.appex */,
+				ACABB84B28C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +204,35 @@
 			path = ScreenShareDemoUITests;
 			sourceTree = "<group>";
 		};
+		ACABB83F28C78684003A1739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACABB84028C78684003A1739 /* ReplayKit.framework */,
+				ACABB84D28C78684003A1739 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACABB84228C78684003A1739 /* BroadcastUploadExtension */ = {
+			isa = PBXGroup;
+			children = (
+				ACABB84328C78684003A1739 /* SampleHandler.h */,
+				ACABB84428C78684003A1739 /* SampleHandler.m */,
+				ACABB84628C78684003A1739 /* Info.plist */,
+			);
+			path = BroadcastUploadExtension;
+			sourceTree = "<group>";
+		};
+		ACABB84F28C78684003A1739 /* BroadcastUploadExtensionSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				ACABB85028C78684003A1739 /* BroadcastSetupViewController.h */,
+				ACABB85128C78684003A1739 /* BroadcastSetupViewController.m */,
+				ACABB85328C78684003A1739 /* Info.plist */,
+			);
+			path = BroadcastUploadExtensionSetupUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,10 +243,13 @@
 				AC80F08328C784670042E0C1 /* Sources */,
 				AC80F08428C784670042E0C1 /* Frameworks */,
 				AC80F08528C784670042E0C1 /* Resources */,
+				ACABB85A28C78684003A1739 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ACABB85528C78684003A1739 /* PBXTargetDependency */,
+				ACABB85828C78684003A1739 /* PBXTargetDependency */,
 			);
 			name = ScreenShareDemo;
 			productName = ScreenShareDemo;
@@ -192,6 +292,40 @@
 			productReference = AC80F0AC28C784680042E0C1 /* ScreenShareDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ACABB83D28C78684003A1739 /* BroadcastUploadExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACABB86028C78684003A1739 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtension" */;
+			buildPhases = (
+				ACABB83A28C78684003A1739 /* Sources */,
+				ACABB83B28C78684003A1739 /* Frameworks */,
+				ACABB83C28C78684003A1739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUploadExtension;
+			productName = BroadcastUploadExtension;
+			productReference = ACABB83E28C78684003A1739 /* BroadcastUploadExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		ACABB84A28C78684003A1739 /* BroadcastUploadExtensionSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACABB85F28C78684003A1739 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtensionSetupUI" */;
+			buildPhases = (
+				ACABB84728C78684003A1739 /* Sources */,
+				ACABB84828C78684003A1739 /* Frameworks */,
+				ACABB84928C78684003A1739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BroadcastUploadExtensionSetupUI;
+			productName = BroadcastUploadExtensionSetupUI;
+			productReference = ACABB84B28C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +346,12 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = AC80F08628C784670042E0C1;
 					};
+					ACABB83D28C78684003A1739 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					ACABB84A28C78684003A1739 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = AC80F08228C784670042E0C1 /* Build configuration list for PBXProject "ScreenShareDemo" */;
@@ -230,6 +370,8 @@
 				AC80F08628C784670042E0C1 /* ScreenShareDemo */,
 				AC80F0A128C784680042E0C1 /* ScreenShareDemoTests */,
 				AC80F0AB28C784680042E0C1 /* ScreenShareDemoUITests */,
+				ACABB83D28C78684003A1739 /* BroadcastUploadExtension */,
+				ACABB84A28C78684003A1739 /* BroadcastUploadExtensionSetupUI */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +395,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AC80F0AA28C784680042E0C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACABB83C28C78684003A1739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACABB84928C78684003A1739 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,6 +446,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACABB83A28C78684003A1739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACABB84528C78684003A1739 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACABB84728C78684003A1739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACABB85228C78684003A1739 /* BroadcastSetupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +474,16 @@
 			isa = PBXTargetDependency;
 			target = AC80F08628C784670042E0C1 /* ScreenShareDemo */;
 			targetProxy = AC80F0AD28C784680042E0C1 /* PBXContainerItemProxy */;
+		};
+		ACABB85528C78684003A1739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACABB84A28C78684003A1739 /* BroadcastUploadExtensionSetupUI */;
+			targetProxy = ACABB85428C78684003A1739 /* PBXContainerItemProxy */;
+		};
+		ACABB85828C78684003A1739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACABB83D28C78684003A1739 /* BroadcastUploadExtension */;
+			targetProxy = ACABB85728C78684003A1739 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -444,6 +626,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U69CD7R9A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenShareDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +653,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U69CD7R9A9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScreenShareDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -553,6 +737,104 @@
 			};
 			name = Release;
 		};
+		ACABB85B28C78684003A1739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U69CD7R9A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastUploadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.ScreenShareDemo.ScreenShareDemo.BroadcastUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACABB85C28C78684003A1739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U69CD7R9A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastUploadExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastUploadExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.ScreenShareDemo.ScreenShareDemo.BroadcastUploadExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACABB85D28C78684003A1739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U69CD7R9A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastUploadExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastUploadExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.ScreenShareDemo.ScreenShareDemo.BroadcastUploadExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACABB85E28C78684003A1739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U69CD7R9A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BroadcastUploadExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BroadcastUploadExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.ScreenShareDemo.ScreenShareDemo.BroadcastUploadExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +870,24 @@
 			buildConfigurations = (
 				AC80F0BD28C784680042E0C1 /* Debug */,
 				AC80F0BE28C784680042E0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACABB85F28C78684003A1739 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtensionSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACABB85D28C78684003A1739 /* Debug */,
+				ACABB85E28C78684003A1739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACABB86028C78684003A1739 /* Build configuration list for PBXNativeTarget "BroadcastUploadExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACABB85B28C78684003A1739 /* Debug */,
+				ACABB85C28C78684003A1739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

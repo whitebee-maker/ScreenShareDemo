@@ -24,6 +24,8 @@
 		ACABB85228C78684003A1739 /* BroadcastSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB85128C78684003A1739 /* BroadcastSetupViewController.m */; };
 		ACABB85628C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACABB84B28C78684003A1739 /* BroadcastUploadExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACABB85928C78684003A1739 /* BroadcastUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACABB83E28C78684003A1739 /* BroadcastUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACABB86728CF720C003A1739 /* WBSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB86628CF720C003A1739 /* WBSocket.m */; };
+		ACABB86A28CF7686003A1739 /* WBThread.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB86928CF7686003A1739 /* WBThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,12 @@
 		ACABB85028C78684003A1739 /* BroadcastSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastSetupViewController.h; sourceTree = "<group>"; };
 		ACABB85128C78684003A1739 /* BroadcastSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastSetupViewController.m; sourceTree = "<group>"; };
 		ACABB85328C78684003A1739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACABB86128C8EC1C003A1739 /* ScreenShareDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenShareDemo.entitlements; sourceTree = "<group>"; };
+		ACABB86228C8ED37003A1739 /* BroadcastUploadExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BroadcastUploadExtension.entitlements; sourceTree = "<group>"; };
+		ACABB86528CF720C003A1739 /* WBSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBSocket.h; sourceTree = "<group>"; };
+		ACABB86628CF720C003A1739 /* WBSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBSocket.m; sourceTree = "<group>"; };
+		ACABB86828CF7686003A1739 /* WBThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBThread.h; sourceTree = "<group>"; };
+		ACABB86928CF7686003A1739 /* WBThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBThread.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,7 @@
 		AC80F07E28C784670042E0C1 = {
 			isa = PBXGroup;
 			children = (
+				ACABB86428CF6FE0003A1739 /* Socket */,
 				AC80F08928C784670042E0C1 /* ScreenShareDemo */,
 				AC80F0A528C784680042E0C1 /* ScreenShareDemoTests */,
 				AC80F0AF28C784680042E0C1 /* ScreenShareDemoUITests */,
@@ -172,6 +181,7 @@
 		AC80F08928C784670042E0C1 /* ScreenShareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				ACABB86128C8EC1C003A1739 /* ScreenShareDemo.entitlements */,
 				AC80F08A28C784670042E0C1 /* AppDelegate.h */,
 				AC80F08B28C784670042E0C1 /* AppDelegate.m */,
 				AC80F08D28C784670042E0C1 /* SceneDelegate.h */,
@@ -216,6 +226,7 @@
 		ACABB84228C78684003A1739 /* BroadcastUploadExtension */ = {
 			isa = PBXGroup;
 			children = (
+				ACABB86228C8ED37003A1739 /* BroadcastUploadExtension.entitlements */,
 				ACABB84328C78684003A1739 /* SampleHandler.h */,
 				ACABB84428C78684003A1739 /* SampleHandler.m */,
 				ACABB84628C78684003A1739 /* Info.plist */,
@@ -231,6 +242,17 @@
 				ACABB85328C78684003A1739 /* Info.plist */,
 			);
 			path = BroadcastUploadExtensionSetupUI;
+			sourceTree = "<group>";
+		};
+		ACABB86428CF6FE0003A1739 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				ACABB86528CF720C003A1739 /* WBSocket.h */,
+				ACABB86628CF720C003A1739 /* WBSocket.m */,
+				ACABB86828CF7686003A1739 /* WBThread.h */,
+				ACABB86928CF7686003A1739 /* WBThread.m */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,8 +445,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC80F09228C784670042E0C1 /* ViewController.m in Sources */,
+				ACABB86728CF720C003A1739 /* WBSocket.m in Sources */,
 				AC80F08C28C784670042E0C1 /* AppDelegate.m in Sources */,
 				AC80F09D28C784680042E0C1 /* main.m in Sources */,
+				ACABB86A28CF7686003A1739 /* WBThread.m in Sources */,
 				AC80F08F28C784670042E0C1 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenShareDemo/ScreenShareDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U69CD7R9A9;
@@ -651,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenShareDemo/ScreenShareDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U69CD7R9A9;
@@ -740,6 +766,7 @@
 		ACABB85B28C78684003A1739 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastUploadExtension/BroadcastUploadExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U69CD7R9A9;
@@ -764,6 +791,7 @@
 		ACABB85C28C78684003A1739 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BroadcastUploadExtension/BroadcastUploadExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U69CD7R9A9;

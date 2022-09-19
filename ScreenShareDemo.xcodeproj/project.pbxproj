@@ -26,6 +26,7 @@
 		ACABB85928C78684003A1739 /* BroadcastUploadExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACABB83E28C78684003A1739 /* BroadcastUploadExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACABB86728CF720C003A1739 /* WBSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB86628CF720C003A1739 /* WBSocket.m */; };
 		ACABB86A28CF7686003A1739 /* WBThread.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB86928CF7686003A1739 /* WBThread.m */; };
+		ACABB86E28D8AEEB003A1739 /* BufferUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ACABB86D28D8AEEB003A1739 /* BufferUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		ACABB86628CF720C003A1739 /* WBSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBSocket.m; sourceTree = "<group>"; };
 		ACABB86828CF7686003A1739 /* WBThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBThread.h; sourceTree = "<group>"; };
 		ACABB86928CF7686003A1739 /* WBThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBThread.m; sourceTree = "<group>"; };
+		ACABB86C28D8AEEB003A1739 /* BufferUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BufferUtils.h; sourceTree = "<group>"; };
+		ACABB86D28D8AEEB003A1739 /* BufferUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BufferUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		AC80F07E28C784670042E0C1 = {
 			isa = PBXGroup;
 			children = (
+				ACABB86B28D8AEAF003A1739 /* Utils */,
 				ACABB86428CF6FE0003A1739 /* Socket */,
 				AC80F08928C784670042E0C1 /* ScreenShareDemo */,
 				AC80F0A528C784680042E0C1 /* ScreenShareDemoTests */,
@@ -253,6 +257,15 @@
 				ACABB86928CF7686003A1739 /* WBThread.m */,
 			);
 			path = Socket;
+			sourceTree = "<group>";
+		};
+		ACABB86B28D8AEAF003A1739 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACABB86C28D8AEEB003A1739 /* BufferUtils.h */,
+				ACABB86D28D8AEEB003A1739 /* BufferUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +463,7 @@
 				AC80F09D28C784680042E0C1 /* main.m in Sources */,
 				ACABB86A28CF7686003A1739 /* WBThread.m in Sources */,
 				AC80F08F28C784670042E0C1 /* SceneDelegate.m in Sources */,
+				ACABB86E28D8AEEB003A1739 /* BufferUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

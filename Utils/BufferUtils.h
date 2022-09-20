@@ -15,8 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)compressImage:(UIImage *)image newWidth:(CGFloat)newImageWidth;
 + (size_t)getCMTimeSize;
-+(CVPixelBufferRef)CVPixelBufferRefFromUiImage:(UIImage *)img;
-+ (CMSampleBufferRef)sampleBufferFromPixbuffer:(CVPixelBufferRef)pixbuffer timeData:(NSData *)data;
++ (CVPixelBufferRef)CVPixelBufferRefFromUiImage:(UIImage *)img;
 + (CMSampleBufferRef)sampleBufferFromPixbuffer:(CVPixelBufferRef)pixbuffer time:(CMTime)time;
 + (UIImage *)imageFromBuffer:(CMSampleBufferRef)buffer;
 

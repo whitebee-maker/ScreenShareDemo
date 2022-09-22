@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC565DAC28DCAFBB00A42426 /* RTCCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = AC565DAB28DCAFBB00A42426 /* RTCCodec.m */; };
+		AC565DB328DCB27900A42426 /* RTCVideoEncoderSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AC565DB228DCB27900A42426 /* RTCVideoEncoderSettings.m */; };
+		AC565DBA28DCB3F300A42426 /* helpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = AC565DB928DCB3F300A42426 /* helpers.mm */; };
+		AC565DBF28DCB4A300A42426 /* RTCVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AC565DBE28DCB4A300A42426 /* RTCVideoDecoder.m */; };
+		AC565DC328DCB66300A42426 /* RTCVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AC565DC228DCB66300A42426 /* RTCVideoEncoder.m */; };
 		AC80F08C28C784670042E0C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80F08B28C784670042E0C1 /* AppDelegate.m */; };
 		AC80F08F28C784670042E0C1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80F08E28C784670042E0C1 /* SceneDelegate.m */; };
 		AC80F09228C784670042E0C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC80F09128C784670042E0C1 /* ViewController.m */; };
@@ -76,6 +81,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC565DAA28DCAFBB00A42426 /* RTCCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCCodec.h; sourceTree = "<group>"; };
+		AC565DAB28DCAFBB00A42426 /* RTCCodec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCCodec.m; sourceTree = "<group>"; };
+		AC565DAE28DCB13300A42426 /* RTCCodecProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCCodecProtocol.h; sourceTree = "<group>"; };
+		AC565DB128DCB27900A42426 /* RTCVideoEncoderSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCVideoEncoderSettings.h; sourceTree = "<group>"; };
+		AC565DB228DCB27900A42426 /* RTCVideoEncoderSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCVideoEncoderSettings.m; sourceTree = "<group>"; };
+		AC565DB428DCB2B500A42426 /* helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		AC565DB928DCB3F300A42426 /* helpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = helpers.mm; sourceTree = "<group>"; };
+		AC565DBD28DCB4A300A42426 /* RTCVideoDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCVideoDecoder.h; sourceTree = "<group>"; };
+		AC565DBE28DCB4A300A42426 /* RTCVideoDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCVideoDecoder.m; sourceTree = "<group>"; };
+		AC565DC128DCB66300A42426 /* RTCVideoEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTCVideoEncoder.h; sourceTree = "<group>"; };
+		AC565DC228DCB66300A42426 /* RTCVideoEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTCVideoEncoder.m; sourceTree = "<group>"; };
 		AC80F08728C784670042E0C1 /* ScreenShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC80F08A28C784670042E0C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC80F08B28C784670042E0C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,9 +171,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC565DA928DCAF7A00A42426 /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				AC565DBC28DCB43200A42426 /* Encoder */,
+				AC565DBB28DCB42800A42426 /* Decoder */,
+				AC565DAA28DCAFBB00A42426 /* RTCCodec.h */,
+				AC565DAB28DCAFBB00A42426 /* RTCCodec.m */,
+				AC565DAE28DCB13300A42426 /* RTCCodecProtocol.h */,
+				AC565DB128DCB27900A42426 /* RTCVideoEncoderSettings.h */,
+				AC565DB228DCB27900A42426 /* RTCVideoEncoderSettings.m */,
+				AC565DB428DCB2B500A42426 /* helpers.h */,
+				AC565DB928DCB3F300A42426 /* helpers.mm */,
+			);
+			path = Codec;
+			sourceTree = "<group>";
+		};
+		AC565DBB28DCB42800A42426 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				AC565DBD28DCB4A300A42426 /* RTCVideoDecoder.h */,
+				AC565DBE28DCB4A300A42426 /* RTCVideoDecoder.m */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		AC565DBC28DCB43200A42426 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				AC565DC128DCB66300A42426 /* RTCVideoEncoder.h */,
+				AC565DC228DCB66300A42426 /* RTCVideoEncoder.m */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
 		AC80F07E28C784670042E0C1 = {
 			isa = PBXGroup;
 			children = (
+				AC565DA928DCAF7A00A42426 /* Codec */,
 				ACABB86B28D8AEAF003A1739 /* Utils */,
 				ACABB86428CF6FE0003A1739 /* Socket */,
 				AC80F08928C784670042E0C1 /* ScreenShareDemo */,
@@ -461,7 +512,12 @@
 				ACABB86728CF720C003A1739 /* WBSocket.m in Sources */,
 				AC80F08C28C784670042E0C1 /* AppDelegate.m in Sources */,
 				AC80F09D28C784680042E0C1 /* main.m in Sources */,
+				AC565DB328DCB27900A42426 /* RTCVideoEncoderSettings.m in Sources */,
+				AC565DBF28DCB4A300A42426 /* RTCVideoDecoder.m in Sources */,
+				AC565DAC28DCAFBB00A42426 /* RTCCodec.m in Sources */,
 				ACABB86A28CF7686003A1739 /* WBThread.m in Sources */,
+				AC565DC328DCB66300A42426 /* RTCVideoEncoder.m in Sources */,
+				AC565DBA28DCB3F300A42426 /* helpers.mm in Sources */,
 				AC80F08F28C784670042E0C1 /* SceneDelegate.m in Sources */,
 				ACABB86E28D8AEEB003A1739 /* BufferUtils.m in Sources */,
 			);
